@@ -36,12 +36,12 @@ aside {
   display: flex;
 }
 
-.result-container > img {
+.results img {
   width: 25%;
   margin: 0.5rem;
 }
 
-.result-container > p {
+.results p {
   display: flex;
   align-items: center;
 }
