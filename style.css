@@ -19,7 +19,7 @@ main {
 
 /* --------------SEARCH-------------- */
 aside {
-  width: 300px;
+  width: 30%;
 }
 
 .search-container {
@@ -31,8 +31,23 @@ aside {
   width: 100%;
 }
 
+.result-container {
+  background-color: aquamarine;
+  display: flex;
+}
+
+.result-container > img {
+  width: 25%;
+  margin: 0.5rem;
+}
+
+.result-container > p {
+  display: flex;
+  align-items: center;
+}
+
 /* --------------DETAILS------------- */
 section {
-  width: 100%;
+  width: 70%;
   margin: 1rem;
 }
