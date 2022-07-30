@@ -1,0 +1,38 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  width: 1020px;
+  height: 720px;
+  display: flex;
+}
+
+/* --------------SEARCH-------------- */
+aside {
+  width: 300px;
+}
+
+.search-container {
+  border: solid 1px black;
+  margin: 1rem;
+}
+
+#search-bar {
+  width: 100%;
+}
+
+/* --------------DETAILS------------- */
+section {
+  width: 100%;
+  margin: 1rem;
+}
