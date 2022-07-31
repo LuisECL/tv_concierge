@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
   <title>Document</title>
 </head>
+
 <body>
+  <header>
+    <div class="logo">
+      <span>TV</span>
+      <span>+</span>
+    </div>
+  </header>
   <main>
     <!-- Search bar -->
     <aside>
@@ -23,11 +34,45 @@
     </aside>
     <!-- Movie/Show details -->
     <section>
-      <h2>Movie/Show Title</h2>
-      <h3>(Year)</h3>
-      <p>Details:</p>
-      <img src="" alt="">
+      <article class="instructions-container">
+        <div class="instructions">
+          <h2>
+            Search for any movie, tv show or game!
+          </h2>
+          <p>
+            Then simply click on it and get detailed information about it.
+          </p>
+        </div>
+      </article>
+      <article class="media-info">
+        <div class="title-container">
+          <span>Title: </span>
+          <span id="title">Movie or show title</span>
+        </div>
+        <div class="release-container">
+          <span>Released: </span>
+          <span id="release"></span>
+        </div>
+        <div class="director-container">
+          <span>Director: </span>
+          <span id="director"></span>
+        </div>
+        <div class="actors-container">
+          <span>Actors: </span>
+          <span id="actors"></span>
+        </div>
+        <div class="genre-container">
+          <span>Genre: </span>
+          <span id="genre"></span>
+        </div>
+        <div class="plot-container">
+          <span>Plot: </span>
+          <span id="plot"></span>
+        </div>
+        <img id="poster" src="" alt="poster">
+      </article>
     </section>
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>

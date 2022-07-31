@@ -1,0 +1,36 @@
+{
+  Actors: "Jessica Chastain, John Malkovich, Common"
+Awards: "N/A"
+BoxOffice: "$497,747"
+Country: "United States"
+DVD: "25 Sep 2020"
+Director: "Tate Taylor"
+Genre: "Action, Drama, Thriller"
+Language: "English, German, French, Chinese"
+Metascore: "39"
+Plot: "Ava is a deadly assassin who works for a black ops organization, traveling the globe specializing in high profile hits. When a job goes dangerously wrong she is forced to fight for her own survival."
+Poster: "https://m.media-amazon.com/images/M/MV5BMTMzMTg1MjgtOWNhYy00NmZmLWExOTctMjA2OTZhZDFkNDhhXkEyXkFqcGdeQXVyNzAwMjU2MTY@._V1_SX300.jpg"
+Production: "N/A"
+Rated: "R"
+Ratings: Array(3)
+0:
+Source: "Internet Movie Database"
+Value: "5.4/10"
+1:
+Source: "Rotten Tomatoes"
+Value: "16%"
+2:
+Source: "Metacritic"
+Value: "39/100"
+Released: "25 Sep 2020"
+Response: "True"
+Runtime: "96 min"
+Title: "Ava"
+Type: "movie"
+Website: "N/A"
+Writer: "Matthew Newton"
+Year: "2020"
+imdbID: "tt8784956"
+imdbRating: "5.4"
+imdbVotes: "54,169"
+}
