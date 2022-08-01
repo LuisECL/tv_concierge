@@ -1,7 +1,13 @@
 let searchContainer = document.querySelector(".search-container");
 let searchBar = document.getElementById('search-bar');
 let results = document.querySelector(".results");
-const detailsTitle = document.getElementById("details-title")
+const title = document.getElementById("title");
+const release = document.getElementById("release");
+const director = document.getElementById("director");
+const actors = document.getElementById("actors");
+const genre = document.getElementById("genre");
+const plot = document.getElementById("plot");
+const poster = document.getElementById("poster")
 
 function search(text){
   fetch(`http://www.omdbapi.com/?apikey=ef1d1c7c&s=${text}`)
@@ -45,8 +51,6 @@ function selectMovie(resultContainers){
       console.log(`You clicked ${resultTitle} with id ${resultID}`)
 
       showMovieDetails(resultID)
-
-      detailsTitle.innerText = resultTitle;
     })
   }
 }
@@ -56,6 +60,17 @@ function showMovieDetails(idIMDB){
     .then(promise => promise.json())
     .then(selectedMovie => {
       console.log(selectedMovie)
+      title.innerText = selectedMovie.Title
+      release.innerText = selectedMovie.Released
+      director.innerText = selectedMovie.Director
+      actors.innerText = selectedMovie.Actors
+      genre.innerText = selectedMovie.Genre
+      plot.innerText = selectedMovie.Plot
+      if (selectedMovie.Poster == "N/A"){
+        poster.setAttribute("src", "img/poster-default.png")
+      } else {
+        poster.setAttribute("src", selectedMovie.Poster)
+      }
     })
 }
 
