@@ -55,6 +55,32 @@ main {
 /* --------------SEARCH-------------- */
 aside {
   width: 30%;
+  overflow:scroll;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #F5F5F5;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Bottom corner of the scrollbar */
+::-webkit-scrollbar-corner {
+  background: #F5F5F5;
 }
 
 .search-container {
