@@ -79,6 +79,19 @@ function showMovieDetails(idIMDB){
     })
 }
 
+function clearMovieInfo(){
+  instructionsContainer.style.display = "flex";
+  infoContainer.style.display = "none";
+}
+
 searchBar.addEventListener("keyup", () => {
   search(searchBar.value)
+})
+
+searchBar.addEventListener("blur", ()=> {
+  if(searchBar.value == ""){
+    clearMovieInfo();
+  } else {
+    return
+  }
 })
