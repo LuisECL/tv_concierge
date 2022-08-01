@@ -110,7 +110,7 @@ section {
 
 .instructions-container {
   height: 100%;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
 }
@@ -125,6 +125,40 @@ section {
   color: #3D3D3D;
 }
 
-.media-info {
-  display: none;
+.info-container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: #EE7219;
+}
+
+.reg-text {
+  color: #3D3D3D;
+}
+
+.title-container {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+.release-container, .director-container, .actors-container, .genre-container, .plot-container {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+}
+
+.plot-container {
+  font-size: clamp(0.8rem, 120%, 1.5rem);
+}
+
+#poster {
+  max-width: 300px;
+  max-height: 445px;
+  margin-left: 1.5rem;
 }
