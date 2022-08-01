@@ -10,6 +10,8 @@ header {
   height: 80px;
   display: flex;
   align-items: center;
+  background: linear-gradient(90deg, rgba(245,245,245,1) 20%, rgba(238,114,25,1) 100%);
+  box-shadow: 4px 4px 10px rgb(0, 0, 0, 0.25);
 }
 
 body {
@@ -24,11 +26,30 @@ main {
   width: 1020px;
   height: 720px;
   display: flex;
+  background-color: #F5F5F5;
+  box-shadow: 4px 4px 10px rgb(0, 0, 0, 0.25);
 }
 
 /* --------------HEADER-------------- */
-aside {
-  width: 30%;
+.logo {
+  margin: 1rem;
+  border: solid #ee7219 4px;
+  width: 100px;
+  height: 64px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo span:first-of-type {
+  font-size: 48px;
+  color: #A74B09;
+}
+
+.logo span:last-of-type {
+  font-size: 64px;
+  color: #EE7219;
 }
 
 /* --------------SEARCH-------------- */
@@ -37,27 +58,38 @@ aside {
 }
 
 .search-container {
-  border: solid 1px black;
   margin: 1rem;
 }
 
 #search-bar {
-  width: 100%;
+  width: 280px;
+  height: 45px;
+  padding: 0.8rem;
+  font-size: 1rem;
+  background-color: #E4E4E4;
+  border: none;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+#search-bar:hover {
+  background-color: #c4c4c4;
 }
 
 .result-container {
-  background-color: aquamarine;
+  background-color: #E4E4E4;
+  width: 280px;
   display: flex;
   cursor: pointer;
 }
 
 .result-container:hover {
-  background-color: aqua;
+  background-color: #F5F5F5;
 }
 
 .results img {
   width: 25%;
-  margin: 0.5rem;
+  margin: 0.3rem;
 }
 
 .text {
@@ -73,7 +105,7 @@ aside {
 /* --------------DETAILS------------- */
 section {
   width: 70%;
-  margin: 1rem;
+  padding: 1.5rem;
 }
 
 .instructions-container {
