@@ -9,6 +9,6 @@ app.use(express.static(__dirname + '/public'));
 
 app.use('/', Router)
 
-app.listen(8080, () => {
+app.listen((process.env.PORT || 3000), () => {
   console.log("Server running on port 3000")
 });
