@@ -13,67 +13,69 @@
 </head>
 
 <body>
-  <header>
-    <div class="logo">
-      <span>TV</span>
-      <span>+</span>
-    </div>
-  </header>
   <main>
-    <!-- Search bar -->
-    <aside>
-      <div class="search-container blur">
-        <input type="search" name="search-bar" id="search-bar" placeholder="Search for a show or movie...">
-        <div class="results">
-        </div>
+    <header>
+      <div class="logo">
+        <span>TV</span>
+        <span>+</span>
       </div>
-      <div class="search-error">
-        <h3>Oops!</h3>
-        <p id="error-msg"></p>
-      </div>
-    </aside>
-    <!-- Movie/Show details -->
-    <section>
-      <article class="instructions-container">
-        <div class="instructions">
-          <h2>
-            Search for any movie, tv show, <br> videogame, or music video!
-          </h2>
-          <p>
-            Then simply click on it and get detailed information about it.
-          </p>
-        </div>
-      </article>
-      <article class="info-container">
-        <div class="info-text">
-          <div class="title-container">
-            <span>Title: </span>
-            <span id="title" class="reg-text">Lorem ipsum dolor</span>
-          </div>
-          <div class="release-container">
-            <span>Released: </span>
-            <span id="release" class="reg-text">25 sept 2020</span>
-          </div>
-          <div class="director-container">
-            <span>Director: </span>
-            <span id="director" class="reg-text">Tate Taylor</span>
-          </div>
-          <div class="actors-container">
-            <span>Actors: </span>
-            <span id="actors" class="reg-text">Jessica Chastain, John Malkovich, Common</span>
-          </div>
-          <div class="genre-container">
-            <span>Genre: </span>
-            <span id="genre" class="reg-text">Action, Drama, Thriller</span>
-          </div>
-          <div class="plot-container">
-            <span>Plot: </span>
-            <span id="plot" class="reg-text">Ava is a deadly assassin who works for a black ops organization, traveling the globe specializing in high profile hits. When a job goes dangerously wrong she is forced to fight for her own survival.</span>
+    </header>
+    <div class="search-and-details">
+      <!-- Search bar -->
+      <aside>
+        <div class="search-container blur">
+          <input type="search" name="search-bar" id="search-bar" placeholder="Search for a show or movie...">
+          <div class="results">
           </div>
         </div>
-        <img id="poster" src="img/poster-default.png" alt="poster">
-      </article>
-    </section>
+        <div class="search-error">
+          <h3>Oops!</h3>
+          <p id="error-msg"></p>
+        </div>
+      </aside>
+      <!-- Movie/Show details -->
+      <section>
+        <article class="instructions-container">
+          <div class="instructions">
+            <h2>
+              Search for any movie, tv show, <br> videogame, or music video!
+            </h2>
+            <p>
+              Then simply click on it and get detailed information about it.
+            </p>
+          </div>
+        </article>
+        <article class="info-container">
+          <div class="info-text">
+            <div class="title-container">
+              <span>Title: </span>
+              <span id="title" class="reg-text">Lorem ipsum dolor</span>
+            </div>
+            <div class="release-container">
+              <span>Released: </span>
+              <span id="release" class="reg-text">25 sept 2020</span>
+            </div>
+            <div class="director-container">
+              <span>Director: </span>
+              <span id="director" class="reg-text">Tate Taylor</span>
+            </div>
+            <div class="actors-container">
+              <span>Actors: </span>
+              <span id="actors" class="reg-text">Jessica Chastain, John Malkovich, Common</span>
+            </div>
+            <div class="genre-container">
+              <span>Genre: </span>
+              <span id="genre" class="reg-text">Action, Drama, Thriller</span>
+            </div>
+            <div class="plot-container">
+              <span>Plot: </span>
+              <span id="plot" class="reg-text">Ava is a deadly assassin who works for a black ops organization, traveling the globe specializing in high profile hits. When a job goes dangerously wrong she is forced to fight for her own survival.</span>
+            </div>
+          </div>
+          <img id="poster" src="img/poster-default.png" alt="poster">
+        </article>
+      </section>
+    </div>
     <script src="script.js"></script>
 </body>
 
