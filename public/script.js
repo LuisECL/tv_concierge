@@ -14,7 +14,7 @@ const plot = document.getElementById("plot");
 const poster = document.getElementById("poster");
 
 function search(text) {
-  fetch(`http://www.omdbapi.com/?apikey=ef1d1c7c&s=${text}`)
+  fetch(`https://www.omdbapi.com/?apikey=ef1d1c7c&s=${text}`)
     .then((promise) => promise.json())
     .then((data) => {
       showSearchResults(data);
@@ -72,7 +72,7 @@ function showMovieDetails(idIMDB) {
   instructionsContainer.style.display = "none";
   infoContainer.style.display = "flex";
 
-  fetch(`http://www.omdbapi.com/?apikey=ef1d1c7c&i=${idIMDB}`)
+  fetch(`https://www.omdbapi.com/?apikey=ef1d1c7c&i=${idIMDB}`)
     .then((promise) => promise.json())
     .then((selectedMovie) => {
       console.log(selectedMovie);
