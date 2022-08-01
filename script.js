@@ -1,6 +1,8 @@
 let searchContainer = document.querySelector(".search-container");
 let searchBar = document.getElementById('search-bar');
 let results = document.querySelector(".results");
+const instructionsContainer = document.querySelector('.instructions-container')
+const infoContainer = document.querySelector(".info-container")
 const title = document.getElementById("title");
 const release = document.getElementById("release");
 const director = document.getElementById("director");
@@ -56,6 +58,9 @@ function selectMovie(resultContainers){
 }
 
 function showMovieDetails(idIMDB){
+  instructionsContainer.style.display = "none";
+  infoContainer.style.display = "flex";
+
   fetch(`http://www.omdbapi.com/?apikey=ef1d1c7c&i=${idIMDB}`)
     .then(promise => promise.json())
     .then(selectedMovie => {
@@ -73,8 +78,6 @@ function showMovieDetails(idIMDB){
       }
     })
 }
-
-showMovieDetails('tt8784956');
 
 searchBar.addEventListener("keyup", () => {
   search(searchBar.value)

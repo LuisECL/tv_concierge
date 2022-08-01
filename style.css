@@ -110,7 +110,7 @@ section {
 
 .instructions-container {
   height: 100%;
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -127,7 +127,7 @@ section {
 
 .info-container {
   height: 100%;
-  display: flex;
+  display: none;
   justify-content: space-between;
   align-items: center;
 }
