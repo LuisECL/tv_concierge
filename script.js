@@ -88,9 +88,14 @@ searchBar.addEventListener("keyup", () => {
   search(searchBar.value)
 })
 
+searchBar.addEventListener("focus", ()=> {
+  searchContainer.classList.remove("blur")
+})
+
 searchBar.addEventListener("blur", ()=> {
   if(searchBar.value == ""){
     clearMovieInfo();
+    searchContainer.classList.add("blur")
   } else {
     return
   }
