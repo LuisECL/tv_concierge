@@ -30,6 +30,10 @@ function showSearchResults(response) {
     results.innerHTML = "";
     searchError.style.display = "flex"
     errorMsg.innerText = "Seems like there are too many results. Try to be more specific."
+  } else if (response.Error == "Movie not found!"){
+    results.innerHTML = "";
+    searchError.style.display = "flex"
+    errorMsg.innerText = "We couldn't find what you're looking for. Try checking the spelling."
   } else if (response.Response) {
     for (let i = 0; i < response.Search.length; i++) {
       searchError.style.display = "none"
