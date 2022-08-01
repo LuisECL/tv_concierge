@@ -24,7 +24,7 @@ function showSearchResults(response){
   results.innerHTML = ""
 
   if(response.Response){
-    for (let i=0; i<6; i++){
+    for (let i=0; i<response.Search.length; i++){
       let resultContainer = document.createElement("div")
       resultContainer.classList.add("result-container");
       resultContainer.setAttribute("id", `${response.Search[i].imdbID}`)
