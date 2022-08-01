@@ -1,5 +1,7 @@
 let searchContainer = document.querySelector(".search-container");
 let searchBar = document.getElementById("search-bar");
+const searchError = document.querySelector(".search-error")
+const errorMsg = document.getElementById("error-msg")
 let results = document.querySelector(".results");
 const instructionsContainer = document.querySelector(".instructions-container");
 const infoContainer = document.querySelector(".info-container");
@@ -21,10 +23,16 @@ function search(text) {
 }
 
 function showSearchResults(response) {
+  console.log(response);
   results.innerHTML = "";
 
-  if (response.Response) {
+  if (response.Error == "Too many results.") {
+    results.innerHTML = "";
+    searchError.style.display = "flex"
+    errorMsg.innerText = "Seems like there are too many results. Try to be more specific."
+  } else if (response.Response) {
     for (let i = 0; i < response.Search.length; i++) {
+      searchError.style.display = "none"
       let resultContainer = document.createElement("div");
       resultContainer.classList.add("result-container");
       resultContainer.setAttribute("id", `${response.Search[i].imdbID}`);
@@ -39,8 +47,6 @@ function showSearchResults(response) {
     }
     let resultContainers = document.getElementsByClassName("result-container");
     selectMovie(resultContainers);
-  } else {
-    results.innerHTML = "";
   }
 }
 
@@ -104,6 +110,7 @@ searchBar.addEventListener("blur", () => {
   if (searchBar.value == "") {
     clearMovieInfo();
     searchContainer.classList.add("blur");
+    searchError.style.display = "none"
   } else {
     return;
   }

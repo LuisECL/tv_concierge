@@ -120,6 +120,24 @@ aside {
   }
 }
 
+.search-error {
+  height: 600px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #F5F5F5;
+  color: #3D3D3D;
+}
+
+.search-error h3 {
+  font-size: 2rem;
+}
+
+.search-error p {
+  font-size: 1.5rem;
+}
+
 .result-container {
   background-color: #E4E4E4;
   width: 280px;
