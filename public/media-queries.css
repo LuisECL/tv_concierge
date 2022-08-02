@@ -1,0 +1,67 @@
+@media (max-width: 1050px) {
+  main {
+    width: 720px;
+    height: 500px;
+  }
+
+  aside {
+    max-height: 420px;
+  }
+
+  #search-bar {
+    height: 32px;
+    font-size: 0.8rem;
+  }
+
+  .search-error {
+    height: 300px;
+    padding: 1.5rem;
+  }
+
+  .search-error h3 {
+    font-size: 1rem;
+  }
+
+  .search-error p {
+    font-size: 0.8rem;
+  }
+
+  .result-container {
+    font-size: 0.8rem;
+  }
+
+  .instructions h2 {
+    font-size: 2rem;
+  }
+
+  .instructions p {
+    font-size: 1rem;
+  }
+
+  .title-container {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+  .release-container,
+  .director-container,
+  .actors-container,
+  .genre-container,
+  .plot-container {
+    font-size: 1rem;
+    margin: 0.25rem 0;
+  }
+
+  .plot-container {
+    font-size: clamp(0.5rem, 120%, 0.8rem);
+  }
+
+  #poster {
+    max-width: 200px;
+  }
+}
+
+
+@media (max-width: 750px) {
+  
+}
