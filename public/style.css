@@ -250,7 +250,7 @@ section {
 }
 
 #poster {
-  width: clamp(250px, 50%, 300px);
+  width: clamp(250px, 80%, 300px);
   max-height: 445px;
   margin: 0 1.5rem;
 }
@@ -282,4 +282,8 @@ footer ul li a {
 
 footer ul li:first-of-type {
   padding-right: 1rem;
+}
+
+.fa-brands {
+  font-size: 1.5rem;
 }
