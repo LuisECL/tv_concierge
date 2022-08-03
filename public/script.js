@@ -64,6 +64,9 @@ function selectMovie(resultContainers) {
       console.log(`You clicked ${resultTitle} with id ${resultID}`);
 
       showMovieDetails(resultID);
+      searchBar.value = ""
+      results.innerHTML = "";
+      results.style.display = "none";
     });
   }
 }
@@ -108,14 +111,14 @@ searchBar.addEventListener("keyup", () => {
 
 searchBar.addEventListener("focus", () => {
   searchContainer.classList.remove("blur");
+  results.style.display = "block";
 });
 
 searchBar.addEventListener("blur", () => {
-  if (searchBar.value == "") {
-    clearMovieInfo();
-    searchContainer.classList.add("blur");
-    searchError.style.display = "none"
+  if (searchBar.value != ""){
+    return
   } else {
-    return;
+    results.style.display = "none";
+    searchError.style.display = "none";
   }
 });
