@@ -10,6 +10,7 @@ header {
   height: 80px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   background-color: rgb(238,114,25);
 }
 
@@ -57,6 +58,12 @@ main {
 
 .logo span:last-of-type {
   font-size: 64px;
+}
+
+header p {
+  font-size: 1.5rem;
+  color: #F5F5F5;
+  margin: 1rem;
 }
 
 /* --------------SEARCH-------------- */
@@ -265,6 +272,10 @@ footer {
   justify-content: space-between;
   padding: 0 2rem;
   color: #F5F5F5;
+}
+
+.fa-copyright {
+  font-size: 0.8rem;
 }
 
 footer ul {
