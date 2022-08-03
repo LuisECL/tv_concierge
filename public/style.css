@@ -8,11 +8,9 @@
 header {
   width: 100%;
   height: 80px;
-  z-index: 2;
   display: flex;
   align-items: center;
-  background: linear-gradient(90deg, rgba(245,245,245,1) 20%, rgba(238,114,25,1) 100%);
-  box-shadow: 4px 4px 10px rgb(0, 0, 0, 0.25);
+  background-color: rgb(238,114,25);
 }
 
 body {
@@ -24,8 +22,9 @@ body {
 }
 
 main {
-  width: 1020px;
-  height: 720px;
+  position: relative;
+  width: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   background-color: #F5F5F5;
@@ -42,31 +41,38 @@ main {
 /* --------------HEADER-------------- */
 .logo {
   margin: 1rem;
-  border: solid #ee7219 4px;
+  border: solid #F5F5F5 4px;
   width: 100px;
   height: 64px;
   border-radius: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #F5F5F5;
 }
 
 .logo span:first-of-type {
   font-size: 48px;
-  color: #A74B09;
 }
 
 .logo span:last-of-type {
   font-size: 64px;
-  color: #EE7219;
 }
 
 /* --------------SEARCH-------------- */
 aside {
-  width: 30%;
-  max-height: 640px;
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 440px;
+  max-height: 740px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   overflow-y:scroll;
   overflow-x:hidden;
+  padding: 8px;
 }
 
 /* width */
@@ -95,8 +101,8 @@ aside {
 }
 
 .search-container {
-  max-width: 280px;
-  margin: 1rem;
+  max-height: 720px;
+  width: 100%;
 }
 
 #search-bar {
@@ -131,12 +137,12 @@ aside {
 }
 
 .search-error {
-  height: 600px;
+  height: 240px;
   display: none;
   flex-direction: column;
   justify-content: center;
   padding: 2rem;
-  background-color: #F5F5F5;
+  background-color: #E4E4E4;
   color: #3D3D3D;
 }
 
@@ -146,6 +152,10 @@ aside {
 
 .search-error p {
   font-size: 1.5rem;
+}
+
+.results {
+  max-height: 75vh;
 }
 
 .result-container {
@@ -238,4 +248,33 @@ section {
   max-width: 300px;
   max-height: 445px;
   margin-left: 1.5rem;
+}
+
+/* --------------FOOTER------------- */
+footer {
+  background-color: #EE7219;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  color: #F5F5F5;
+}
+
+footer ul {
+  display: flex;
+}
+
+footer ul li {
+  list-style: none;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: #F5F5F5;
+}
+
+footer ul li:first-of-type {
+  padding-right: 1rem;
 }
