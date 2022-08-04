@@ -1,6 +1,5 @@
 # TV+
-![file-path](public/img/logo.png)
-<img src="img/logo.png">
+<img width="400" src="public/img/logo.png">
 
 ## Introduction
 **TV+** is a SPA developed to search for information about movies, tv shows, videogames or music videos. It's responsive design allows you to use it on large screens, tablets and mobile devices.
