@@ -196,9 +196,10 @@ aside {
 
 /* --------------DETAILS------------- */
 section {
-  height: 100%;
+  height: calc(100% - 100px);
   width: clamp(280px, 100%, 900px);
   padding: 1rem;
+  margin-top: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -258,7 +259,7 @@ section {
 
 #poster {
   width: clamp(250px, 80%, 300px);
-  max-height: 445px;
+  height: clamp(200px, 85%, 445px);
   margin: 0 1.5rem;
 }
 
